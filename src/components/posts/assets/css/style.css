@@ -1,0 +1,159 @@
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.post-container{
+    margin: 0 auto;
+    width: 80%;
+    background-color: #F8F8F8;
+    padding-top: 15px;
+    min-height: 500px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.article {
+    padding: 1.2em 1.8em;
+    border-left: 10px solid #00868B;
+    position:relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px; /* 5px rounded corners */
+    margin: 15px auto;
+    width: 90%;
+    box-sizing: border-box;
+    background-color:#fff ;
+}
+
+ul {
+    list-style: none;
+    margin: 0.5em 0 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin-left: 1em;
+    line-height: 1em;
+}
+li:first-child {
+        margin-left: 0;
+}
+
+
+span:nth-of-type(2) {
+    margin-left: 0.5em;
+    font-size: 0.8em;
+    font-weight: 300;
+    vertical-align: middle;
+    color: #838689;
+}
+
+p {
+    margin: 1.25em 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #222222;
+}
+
+span {
+    font-weight: 700;
+    color: #000000;
+}
+
+@media only screen and (max-width: 600px) {
+    .post-container{width: 100%;}
+    p{
+        font-size: 18px;
+    }   
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .post-container {width: 90%;}
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .post-container {width: 85%;}
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+   
+  } 
+  @media only screen and (min-width: 1300px) {
+    #root{max-width: 1300px;}
+  } 
+
+ .post-links{
+      display:block;
+      text-align: center;
+      width: 100%;
+      bottom: 10px;
+      box-sizing: border-box;
+      margin:0 auto;
+      margin-top: 40px;
+
+  }
+  .post-links a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: #00868B;
+  }
+  .post-links a:hover{
+    color: aqua;
+  }
+
+  .single-post{
+      padding: 15px 15px;
+      background-color:#fff;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        border-radius: 5px; /* 5px rounded corners */
+     margin: 15px auto;
+         width: 90%;
+         box-sizing: border-box;
+         border-left: 10px solid #00868B;
+  }
+
+  h4{
+      margin: 0;
+      margin-bottom: 10px;
+  }
+
+  .post-links .disabled-link {
+    color: #838689;
+  }
+
+  .post-links .disabled-link:hover {
+    color: #838689;
+    cursor: auto;
+  }
+
+  .loader {
+    border: 16px solid #f3f3f3;
+    margin: 10px auto;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .fa.fa-user{
+    color:#00868B;
+  }
+
+

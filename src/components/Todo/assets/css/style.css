@@ -1,0 +1,124 @@
+#todo-list{
+    width: 50%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background: #f7f7f7;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: block;
+}
+.post-container.todos {
+    padding-top: 15px;
+}
+
+h1{
+    background: #00868b;
+    color: white;
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: normal;
+}
+.donetodo{
+    text-decoration: line-through;
+    color: gray;
+}
+
+#todo-list li{
+    width: 100%;
+    background: #fff;
+    font-size: 17px;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+    cursor: pointer;
+    margin-left: 0px;
+}
+
+#todo-list li:hover{
+    cursor: pointer;
+}
+
+#todo-list li:nth-child(2n){
+    background: #f7f7f7;
+}
+
+#todo-list ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;   
+}
+
+#todo-list input{
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 17px;
+    background: #f7f7f7;
+    height: 40px;
+    padding: 13px 13px 13px 20px;
+    color: #2980b9;
+    border:3px solid rgba(0,0,0,0);
+}
+
+#todo-list input:focus{
+    background: #fff;
+    border: 3px solid #2980b9;
+    outline: none;
+}
+
+#todo-list span{
+    background: #F08080;
+    height: 40px;
+    margin-right: 40px;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    width: 0;
+    transition: 0.2s linear;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#todo-list li:hover span{
+    width: 40px;
+    opacity: 1.0;
+}
+
+#todo-list button{
+    width: 60%;
+    margin: 10px 20%;
+    border-radius: 5px;
+    background: #00868b;
+    height: 40px;
+    font-size: 24px;
+    font-weight: normal;
+    color: white;
+    border: none;
+    box-shadow: 0 0 3px rgba(0,0,0, 0.1);
+    cursor: pointer;
+}
+button:hover {
+    background: #2980d9;
+    transform: scale(1.03);
+}
+#todo-list span:hover{
+    background: #DC143C;
+}
+.fa-check{
+    color: green;
+    margin-left: 15px;
+}
+@media only screen and (max-width: 600px) {
+    #todo-list {width: 100%;}
+    .post-container.todos {
+        padding-top: 0px;
+    }
+  }
+
+@media only screen and (min-width: 600px) {
+    #todo-list {width: 90%;}
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    #todo-list {width: 70%;}
+  } 
